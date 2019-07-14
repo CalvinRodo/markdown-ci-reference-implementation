@@ -1,7 +1,12 @@
-language: node
+language: node_js
+
+node_js:
+  "lts/*"
 
 install: 
   - yarn install
+  
+cache: yarn
 
 script: 
   - yarn lint
