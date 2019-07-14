@@ -5,7 +5,10 @@
     "ESDC",
     "markdownlint",
     "kellyjac",
-    "ruleset"
+    "ruleset",
+    "posix",
+    "xargs",
+    "robertbeal"
   ],
   "ignorePaths":  ["node_modules"]
 }

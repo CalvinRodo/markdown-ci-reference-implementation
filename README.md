@@ -48,6 +48,30 @@ through npm or yarn.
 
 `cspell **/*.md --color`
 
+### Link Checker
+
+We use the `markdown-link-check` to ensure that all of the links we are
+referencing in our markdown file point to valid web sites. We are using
+the docker image for this tool to ensure a consistent run environment.
+
+#### Link to Link Checker Tool
+
+- [Link to markdown-link-check GitHub page](https://github.com/tcort/markdown-link-check)
+- [Link to markdown-link-check Docker Image](https://hub.docker.com/r/robertbeal/markdown-link-checker/)
+
+#### Command to run Link Checker
+
+> **Please Note:** The markdown link checker does not have functionality to
+> exclude folders so we are using the find command to search for all markdown
+> that aren't in the node_modules folder.  
+> Due to the use of find this command is best run on posix compatible operating
+> systems
+
+```bash
+find . -not -path './**/node_modules/*' -name "*.md" | \
+xargs docker run --rm --read-only -v $PWD:/data robertbeal/markdown-link-checker
+```
+
 ## Special Thanks
 
 Thanks goes to the IT Strategy Team at ESDC. Most of this information is copied
