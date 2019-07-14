@@ -4,10 +4,14 @@ A reference implementation for running CI on Markdown files.
 
 ## Implementations
 
-### Travis
+### Travis 
+
+[![Build Status](https://travis-ci.com/CalvinRodo/markdown-ci-reference-implementation.svg?branch=master)](https://travis-ci.com/CalvinRodo/markdown-ci-reference-implementation)
 
 We use the Node environment as not all of the tools used have docker images
 provided through the node package manager.
+
+> **Please Note:** at this time in order to use yarn you must have a `yarn.lock` file. ([See here for more.](https://blog.travis-ci.com/2016-11-21-travis-ci-now-supports-yarn))
 
 ## Static Code Analysis - Linting
 
