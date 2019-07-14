@@ -6,3 +6,4 @@ install:
 script: 
   - yarn lint
   - yarn cspell 
+  - find . -not -path './**/node_modules/*' -name "*.md" | xargs docker run --rm --read-only -v $PWD:/data robertbeal/markdown-link-checker
