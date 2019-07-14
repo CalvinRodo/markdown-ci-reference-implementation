@@ -1,0 +1,11 @@
+{
+  "version": "0.1",
+  "language": "en",
+  "words": [
+    "ESDC",
+    "markdownlint",
+    "kellyjac",
+    "ruleset"
+  ],
+  "ignorePaths":  ["node_modules"]
+}

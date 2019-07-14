@@ -1,0 +1,16 @@
+{
+  "name": "markdown-ci-reference-implementation",
+  "version": "1.0.0",
+  "description": "Reference Implementation for performing Continuous Integration on Markdown Files",
+  "main": "index.js",
+  "repository": "git@github.com:CalvinRodo/markdown-ci-reference-implementation.git",
+  "author": "CalvinRodo <calvinv@gmail.com>",
+  "license": "MIT",
+  "scripts": { 
+    "spellcheck": "cspell **/*.md --color",
+    "lint": "docker run -v $PWD:/markdown 06kellyjac/markdownlint-cli -i node_modules **/*.md"
+  },
+  "devDependencies": {
+    "cspell": "^4.0.26"
+  }
+}
