@@ -13,7 +13,7 @@ provided through the node package manager.
 
 > **Please Note:** at this time in order to use yarn you must have a
 > `yarn.lock` file.
-> ([See here for m](https://blog.travis-ci.com/2016-11-21-travis-ci-now-supports-yarn))
+> ([See here for more](https://blog.travis-ci.com/2016-11-21-travis-ci-now-supports-yarn))
 
 ## Static Code Analysis - Linting
 
