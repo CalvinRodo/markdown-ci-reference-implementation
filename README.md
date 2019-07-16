@@ -18,6 +18,7 @@ provided through the node package manager.
 ### Azure DevOps
 
 #### Azure DevOps Build Status
+
 [![Build Status](https://dev.azure.com/cicd-ref-imp/markdown-ci-reference-implementation/_apis/build/status/CalvinRodo.markdown-ci-reference-implementation?branchName=master)](https://dev.azure.com/cicd-ref-imp/markdown-ci-reference-implementation/_build/latest?definitionId=1&branchName=master)
 
 ## Static Code Analysis - Linting
