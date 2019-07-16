@@ -15,6 +15,12 @@ provided through the node package manager.
 > `yarn.lock` file.
 > ([See here for more](https://blog.travis-ci.com/2016-11-21-travis-ci-now-supports-yarn))
 
+### Azure DevOps
+
+#### Azure DevOps Build Status
+
+[![Build Status](https://dev.azure.com/cicd-ref-imp/markdown-ci-reference-implementation/_apis/build/status/CalvinRodo.markdown-ci-reference-implementation?branchName=master)](https://dev.azure.com/cicd-ref-imp/markdown-ci-reference-implementation/_build/latest?definitionId=1&branchName=master)
+
 ## Static Code Analysis - Linting
 
 ### Error Checking

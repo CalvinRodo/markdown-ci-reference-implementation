@@ -1,0 +1,21 @@
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: yarn install
+  displayName: 'Install dependencies'
+
+- script: yarn lint
+  condition: always()
+  displayName: 'Lint Markdown'
+- script: yarn spellcheck
+  condition: always()
+  displayName: 'Check Spelling'
+- script: find . -not -path './**/node_modules/*' -name "*.md" | xargs docker run --rm --read-only -v $PWD:/data robertbeal/markdown-link-checker
+  condition: always()
+  displayName: 'Check Links'
+
